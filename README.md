@@ -5,7 +5,7 @@ Use golangci-lint more securely in your CI workflow.
 ## Quick Start
 Copy safer-golangci-lint.yml into [your_github_repo]/.github/workflows/
 
-You should configure your .golangci.yml normally, as instructed in golangci-lint docs.
+Configure your .golangci.yml normally, as instructed in golangci-lint docs.
 
 ## Upgrading to newer version of golangci-lint
 1. specify new version number in GOLINTERS_VERSION
