@@ -1,13 +1,13 @@
 # Safer GitHub Actions Workflow for golangci-lint
 
-Use golangci-lint more securely in your CI workflow.
+Use [golangci/golangci-lint](https://github.com/golangci/golangci-lint) more securely in your CI workflow.
 
 Projects using this workflow file includes:
  - [fxamacker/cbor](https://github.com/fxamacker/cbor)
  - [x448/float16](https://github.com/x448/float16)
 
 ## Quick Start
-Step 1. Copy safer-golangci-lint.yml into [github_repo]/.github/workflows/  
+Step 1. Copy [safer-golangci-lint.yml](https://raw.githubusercontent.com/x448/safer-golangci-lint/main/safer-golangci-lint.yml) into [github_repo]/.github/workflows/  
 Step 2. There's no step 2 if you like the default settings.
 
 You can use a config file (.golangci.yml) as described by the [golangci-lint](https://github.com/golangci/golangci-lint) project.
