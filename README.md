@@ -3,11 +3,12 @@
 Use golangci-lint more securely in your CI workflow.
 
 ## Quick Start
-Copy safer-golangci-lint.yml into [your_github_repo]/.github/workflows/
+Step 1. Copy safer-golangci-lint.yml into [github_repo]/.github/workflows/  
+Step 2. There's no step 2 if you like the default settings.
 
-Configure your .golangci.yml normally, as instructed in golangci-lint docs.
+You can use a config file (.golangci.yml) as described by the [golangci-lint](https://github.com/golangci/golangci-lint) project.
 
-## Upgrading to newer version of golangci-lint
+## Upgrading to newer version of golangci-lint than this project
 1. specify new version number in GOLINTERS_VERSION
 2. specify new hash of tarball in GOLINTERS_TGZ_HASH
 
@@ -15,23 +16,27 @@ Configure your .golangci.yml normally, as instructed in golangci-lint docs.
 
 100% of the script for downloading, installing, and running golangci-lint
 is embedded in the workflow file.  The embedded SHA384 is used to verify the 
-downloaded golangci-lint tarball (e.g. golangci-lint-1.40.1-linux-amd64.tar.gz). 
+downloaded golangci-lint tarball (e.g. golangci-lint-1.41.1-linux-amd64.tar.gz). 
 
 ## Why?
 1. Avoid downloading and executing unverified wrapper scripts or actions each time a workflow runs.  
    See https://www.securityweek.com/codecov-bash-uploader-dev-tool-compromised-supply-chain-hack
 2. Use openssl instead of sha256sum because it's easier to change hash algo to BLAKE2s, SHA3-256, etc.
-3. Use SHA384 instead of SHA256 to avoid debating strangers about length extension attacks and gzip file format.
+3. Use SHA384 instead of SHA256 to avoid debates about length extension attacks and gzip file format.
 4. Use embedded SHA384 instead of downloading CHECKSUM because CHECKSUM file isn't digitally signed.
 5. Use binary instead of building from source because it's probably easier to detect backdoors in one binary 
    than all the combined source code of dozens of linters and all their required 3rd-party packages.
 
-## Changelog
-2021-05-16  Created. Use golangci-lint 1.40.1, Go 1.15.x, and ubuntu-latest.  
- - SHA256 of golangci-lint-1.40.1-linux-amd64.tar.gz is  
-   7c133b4b39c0a46cf8d67265da651f169079d137ae71aee9b5934e2281bd18d3
- - SHA384 of golangci-lint-1.40.1-linux-amd64.tar.gz) is  
-   d0b9e9c0eac5c5e03b9feb546d181918fca9abc94656824badccacc77aa91bc78ab99fd22094d634d3a58a91353fb1b9
+## Release 1.14.1 (June 19, 2021)
+Changes:  
+  - Bump Go to 1.16.x and golangci-lint to 1.41.1.
+  - Increase default timeout to 5 minutes.
+  - Remove optional noisy run because "noisy" is too subjective.
+  - SHA256(linux-amd64.tar.gz) is 23e1078ab00a750afcde7e7eb5aab8e908ef18bee5486eeaa2d52ee57d178580
+  - SHA384(linux-amd64.tar.gz) is 8e966704696875f39d324a2f321ac1f63edab08668d8e09fa06dbc54ffe4c4bf4796c80d611d7b40ca42a4b33c208800
+
+SHA384(safer-golangci-lint.yml) v1.14.1 is  
+9604a048bdaf5f0c613074e7b7c25bd8468e2984282aea4b0a7d0bb04f30720f730f61015ce5c94cab0f1f10aaa15aa3
 
 ## License
 safer-golangci-lint is licensed under MIT License.  See [LICENSE](LICENSE) for the full license text.  
