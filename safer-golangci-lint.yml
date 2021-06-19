@@ -94,4 +94,3 @@ jobs:
       - name: Run golangci-lint
         run: $(go env GOPATH)/bin/golangci-lint run --timeout="${GOLINTERS_TIMEOUT}"
         shell: bash
-        
