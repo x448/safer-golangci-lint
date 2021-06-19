@@ -32,8 +32,8 @@ Changes:
   - Bump Go to 1.16.x and golangci-lint to 1.41.1.
   - Increase default timeout to 5 minutes.
   - Remove optional noisy run because "noisy" is too subjective.
-  - SHA256(linux-amd64.tar.gz) is 23e1078ab00a750afcde7e7eb5aab8e908ef18bee5486eeaa2d52ee57d178580
-  - SHA384(linux-amd64.tar.gz) is 8e966704696875f39d324a2f321ac1f63edab08668d8e09fa06dbc54ffe4c4bf4796c80d611d7b40ca42a4b33c208800
+  - SHA256(golangci-lint-1.41.1-linux-amd64.tar.gz) is 23e1078ab00a750afcde7e7eb5aab8e908ef18bee5486eeaa2d52ee57d178580
+  - SHA384(golangci-lint-1.41.1-linux-amd64.tar.gz) is 8e966704696875f39d324a2f321ac1f63edab08668d8e09fa06dbc54ffe4c4bf4796c80d611d7b40ca42a4b33c208800
 
 SHA384(safer-golangci-lint.yml) v1.14.1 is  
 9604a048bdaf5f0c613074e7b7c25bd8468e2984282aea4b0a7d0bb04f30720f730f61015ce5c94cab0f1f10aaa15aa3
