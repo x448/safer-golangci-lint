@@ -20,7 +20,7 @@ You can use a config file (.golangci.yml) as described by the [golangci-lint](ht
 
 100% of the script for downloading, installing, and running golangci-lint
 is embedded in the workflow file.  The embedded SHA384 is used to verify the 
-downloaded golangci-lint tarball (e.g. golangci-lint-1.41.1-linux-amd64.tar.gz). 
+downloaded golangci-lint tarball (e.g. golangci-lint-1.42.0-linux-amd64.tar.gz). 
 
 ## Why?
 1. Avoid downloading and executing unverified wrapper scripts or actions each time a workflow runs.  
@@ -33,8 +33,8 @@ downloaded golangci-lint tarball (e.g. golangci-lint-1.41.1-linux-amd64.tar.gz).
 ## Release 1.42.0 (August 22, 2021)
 Changes:  
   - Bump golangci-lint to 1.42.0.
-  - SHA256(golangci-lint-1.41.1-linux-amd64.tar.gz) is 6937f62f8e2329e94822dc11c10b871ace5557ae1fcc4ee2f9980cd6aecbc159
-  - SHA384(golangci-lint-1.41.1-linux-amd64.tar.gz) is 6bc3704f79a14150467f651e4f7a3975caf555fc93fe5fae7aa3b1d5f7eaf7261d97486298d169b241b587f52e46025e
+  - SHA256(golangci-lint-1.42.0-linux-amd64.tar.gz) is 6937f62f8e2329e94822dc11c10b871ace5557ae1fcc4ee2f9980cd6aecbc159
+  - SHA384(golangci-lint-1.42.0-linux-amd64.tar.gz) is 6bc3704f79a14150467f651e4f7a3975caf555fc93fe5fae7aa3b1d5f7eaf7261d97486298d169b241b587f52e46025e
 
 SHA384(safer-golangci-lint.yml) v1.42.0 is  
 9960c18d76df37c9f7ee562d608daef44dc24c642b8ffd72917b2b4a92ff74c5707e16f684d94b19eceed5c11bb463a1
