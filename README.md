@@ -30,14 +30,18 @@ downloaded golangci-lint tarball (e.g. golangci-lint-1.42.0-linux-amd64.tar.gz).
 4. Use binary instead of building from source because it's probably easier to detect backdoors in one binary 
    than all the combined source code of dozens of linters and all their required 3rd-party packages.
 
-## Release 1.42.0 (August 22, 2021)
-Changes:  
-  - Bump golangci-lint to 1.42.0.
-  - SHA256(golangci-lint-1.42.0-linux-amd64.tar.gz) is 6937f62f8e2329e94822dc11c10b871ace5557ae1fcc4ee2f9980cd6aecbc159
-  - SHA384(golangci-lint-1.42.0-linux-amd64.tar.gz) is 6bc3704f79a14150467f651e4f7a3975caf555fc93fe5fae7aa3b1d5f7eaf7261d97486298d169b241b587f52e46025e
+## Release 1.46.2 (May 19, 2022)
+Changes:
+  - Bump golangci-lint to 1.46.2.
+  - Remove default permissions at top level and grant only read permission in the job.
+  - actions/setup-go uses check-latest: true
+  - Add workflow_dispatch.
+  - Tidy some comments.
+  - SHA-256(golangci-lint-1.42.0-linux-amd64.tar.gz) is 242cd4f2d6ac0556e315192e8555784d13da5d1874e51304711570769c4f2b9b
+  - SHA-384(golangci-lint-1.42.0-linux-amd64.tar.gz) is 60ade95e447f8c9a2dfc507c271c2ff41a0e0856f077bf2f734bcd80dd8268addf8cf1625c3e47a6516eb14f23423315
 
-SHA384(safer-golangci-lint.yml) v1.42.0 is  
-9960c18d76df37c9f7ee562d608daef44dc24c642b8ffd72917b2b4a92ff74c5707e16f684d94b19eceed5c11bb463a1
+SHA-384 of safer-golangci-lint.yml (v1.46.2) is  
+61b3abc35547b1bc662fec29e3bd72c294af0dee618dbbf6e70032bf2ee38487b9adab9793770f3405fec0da81f57733
 
 ## License
 safer-golangci-lint is licensed under MIT License.  See [LICENSE](LICENSE) for the full license text.  
