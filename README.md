@@ -1,6 +1,6 @@
 # Safer GitHub Actions Workflow for golangci-lint
 
-This workflow downloads, verifies, and runs [golangci/golangci-lint](https://github.com/golangci/golangci-lint) in a deterministic, reviewable, and safe manner.
+This workflow downloads, verifies, and runs [golangci/golangci-lint](https://github.com/golangci/golangci-lint) in a deterministic, easy to audit, and safe manner.
 
 ## Why use safer-golangci-lint.yml?
 
