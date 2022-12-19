@@ -42,17 +42,14 @@ Or if you don't want to wait for an update, you can:
 1. specify new version number in GOLINTERS_VERSION
 2. specify new hash of tarball in GOLINTERS_TGZ_HASH
 
-## Release 1.49.0 (September 18, 2022)
+## Release v1.50.1
 Changes:
-  - Bump golangci-lint to 1.49.0
+  - Bump golangci-lint to 1.50.1
   - Bump Go to 1.19 (latest version of 1.19.x because check-latest: true).
-  - Put Go version in environment variable GO_VERSION.
-  - Increase timeout to 15m for bigger projects enabling more linters.
-  - Use SHA-256 to verify (instead of SHA-384) and mention checksums file.
 
-SHA-256:
-- golangci-lint-1.49.0-linux-amd64.tar.gz: 5badc6e9fee2003621efa07e385910d9a88c89b38f6c35aded153193c5125178
-- safer-golangci-lint.yml (v1.49.0): 1447b9ffa8cbdbfd772890f940cc56f9012a037f8522df5e7293a596493e1716
+SHA-256
+- golangci-lint-1.50.1-linux-amd64.tar.gz: 4ba1dc9dbdf05b7bdc6f0e04bdfe6f63aa70576f51817be1b2540bbce017b69a
+- safer-golangci-lint.yml (v1.50.1): 0dde254bdf9d5c33a96e8caf138e90f0aaa107267971566e196c9a4e37ab81c4
 
 ## License
 safer-golangci-lint is licensed under MIT License.  See [LICENSE](LICENSE) for the full license text.  
