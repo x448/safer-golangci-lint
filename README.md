@@ -42,14 +42,14 @@ Or if you don't want to wait for an update, you can:
 1. specify new version number in GOLINTERS_VERSION
 2. specify new hash of tarball in GOLINTERS_TGZ_HASH
 
-## Release v1.51.1
+## Release v1.51.2
 
 Changes:
-  - Bump golangci-lint to 1.51.1
+  - Bump golangci-lint to 1.51.2
 
 SHA-256
-- golangci-lint-1.51.1-linux-amd64.tar.gz: 17aeb26c76820c22efa0e1838b0ab93e90cfedef43fbfc9a2f33f27eb9e5e070
-- safer-golangci-lint.yml (v1.51.1): 2c2e7ab5b41819b5121929c6c33f3a428bd2637dab652c9a00fd637db122426b
+- golangci-lint-1.51.2-linux-amd64.tar.gz: 4de479eb9d9bc29da51aec1834e7c255b333723d38dbd56781c68e5dddc6a90b
+- safer-golangci-lint.yml (v1.51.2): 787888454d6b324aa9734c7afa1165eed99bb580a518b262ed68efcab9e544b4
 
 ## License
 
