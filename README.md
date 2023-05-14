@@ -6,11 +6,11 @@ This workflow downloads, verifies, and runs [golangci/golangci-lint](https://git
 
 Use this to avoid two problems:
 - Bad practice of using pipe-to-shell, which allows 3rd-party script to execute without your review.
-- Tedious practice of reviewing and using [golangci-lint-action](https://github.com/golangci/golangci-lint-action), which requires:
+- More time-consuming practice of reviewing and pinning [golangci-lint-action](https://github.com/golangci/golangci-lint-action), which requires:
   - Reviewing each release of golangci-lint-action, which is relatively time-consuming.
   - Pinning each release after reviewing the code.
 
-With safer-gbolangci-lint.yml, just review the self-contained yml file once.  After that, you only need to update 2 variables whenever a new golangci-lint is released:
+With safer-gbolangci-lint.yml, you only need to update 2 variables whenever a new golangci-lint is released:
  - Version number of golangci-lint.  E.g. "1.52.2".
  - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.52.2".
 
@@ -60,14 +60,14 @@ Changes:
  - Use defaults for pull_request trigger
  - Bump golangci-lint to 1.52.2
  - Hash of golangci-lint-1.52.2-linux-amd64.tar.gz
-   SHA-256: c9cf72d12058a131746edd409ed94ccd578fbd178899d1ed41ceae3ce5f54501
-   This SHA-256 digest matches golangci-lint-1.52.2-checksums.txt at
+   SHA-256: c9cf72d12058a131746edd409ed94ccd578fbd178899d1ed41ceae3ce5f54501  
+   This SHA-256 digest matches golangci-lint-1.52.2-checksums.txt at  
    https://github.com/golangci/golangci-lint/releases
 
 SHA-256
-- safer-golangci-lint.yml (v1.51.2): b23f18bcfdd933ecc324e2ad7459670f25d91d4539fbd366a83c7026aeee577c
-- golangci-lint-1.52.2-linux-amd64.tar.gz: c9cf72d12058a131746edd409ed94ccd578fbd178899d1ed41ceae3ce5f54501
-  This SHA-256 digest matches golangci-lint-1.52.2-checksums.txt at
+- safer-golangci-lint.yml (v1.52.2): b23f18bcfdd933ecc324e2ad7459670f25d91d4539fbd366a83c7026aeee577c
+- golangci-lint-1.52.2-linux-amd64.tar.gz: c9cf72d12058a131746edd409ed94ccd578fbd178899d1ed41ceae3ce5f54501  
+  This SHA-256 digest matches golangci-lint-1.52.2-checksums.txt at  
   https://github.com/golangci/golangci-lint/releases
 
 
