@@ -5,12 +5,12 @@ This workflow downloads, verifies, and runs [golangci/golangci-lint](https://git
 ## Why use safer-golangci-lint.yml?
 
 Use this to avoid two problems:
-- Bad practice of using pipe-to-shell, which allows 3rd-party script to execute without your review.
-- More time-consuming practice of reviewing and pinning [golangci-lint-action](https://github.com/golangci/golangci-lint-action), which requires:
+- Bad practice of using curl-to-shell, which allows 3rd-party script to change without notice and execute.
+- More time-consuming practice of reviewing and pinning [golangci-lint-action](https://github.com/golangci/golangci-lint-action) requires:
   - Reviewing each release of golangci-lint-action, which is relatively time-consuming.
   - Pinning each release after reviewing the code.
 
-With safer-gbolangci-lint.yml, you only need to update 2 variables whenever a new golangci-lint is released:
+With safer-gbolangci-lint.yml, you only need to update 2 variables when you want to use a newer golangci-lint:
  - Version number of golangci-lint.  E.g. "1.52.2".
  - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.52.2".
 
@@ -22,6 +22,7 @@ Everything you need to download, verify, and execute a verified file should be s
 
 Projects using safer-golangci-lint.yml:
  - [fxamacker/cbor](https://github.com/fxamacker/cbor)
+ - [fxamacker/circlehash](https://github.com/fxamacker/circlehash)
  - [x448/float16](https://github.com/x448/float16)
 
 ## safer-golangci-lint.yml
