@@ -66,7 +66,7 @@ Changes:
    https://github.com/golangci/golangci-lint/releases
 
 SHA-256
-- safer-golangci-lint.yml (v1.52.2): b23f18bcfdd933ecc324e2ad7459670f25d91d4539fbd366a83c7026aeee577c
+- safer-golangci-lint.yml (v1.52.2): 8f50e053d416e7ef2ccec0cf6c20efb6befbf380f735e7157d4d4611db88d95a
 - golangci-lint-1.52.2-linux-amd64.tar.gz: c9cf72d12058a131746edd409ed94ccd578fbd178899d1ed41ceae3ce5f54501  
   This SHA-256 digest matches golangci-lint-1.52.2-checksums.txt at  
   https://github.com/golangci/golangci-lint/releases
