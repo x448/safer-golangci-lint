@@ -11,8 +11,8 @@ Use this to avoid two problems:
   - Pinning each release after reviewing the code.
 
 With safer-gbolangci-lint.yml, you only need to update 2 variables when you want to use a newer golangci-lint:
- - Version number of golangci-lint.  E.g. "1.52.2".
- - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.52.2".
+ - Version number of golangci-lint.  E.g. "1.53.3".
+ - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.53.3".
 
 What you download and execute shouldn't be able to change at anytime without your review. Linting the same source code should produce deterministic results unless you choose to modify the workflow or linter settings.
 
@@ -53,22 +53,19 @@ Or if you don't want to wait for an update, you can:
 1. specify new version number in GOLINTERS_VERSION
 2. specify new hash of tarball in GOLINTERS_TGZ_HASH
 
-## Release v1.52.2
+## Release v1.53.3
 
 Changes:
- - Bump Go to 1.20
- - Bump actions/setup-go to v4
- - Use defaults for pull_request trigger
- - Bump golangci-lint to 1.52.2
- - Hash of golangci-lint-1.52.2-linux-amd64.tar.gz
-   SHA-256: c9cf72d12058a131746edd409ed94ccd578fbd178899d1ed41ceae3ce5f54501  
+ - Bump golangci-lint to 1.53.3
+ - Hash of golangci-lint-1.53.3-linux-amd64.tar.gz
+   SHA-256: 4f62007ca96372ccba54760e2ed39c2446b40ec24d9a90c21aad9f2fdf6cf0da  
    This SHA-256 digest matches golangci-lint-1.52.2-checksums.txt at  
    https://github.com/golangci/golangci-lint/releases
 
 SHA-256
-- safer-golangci-lint.yml (v1.52.2): 8f50e053d416e7ef2ccec0cf6c20efb6befbf380f735e7157d4d4611db88d95a
-- golangci-lint-1.52.2-linux-amd64.tar.gz: c9cf72d12058a131746edd409ed94ccd578fbd178899d1ed41ceae3ce5f54501  
-  This SHA-256 digest matches golangci-lint-1.52.2-checksums.txt at  
+- safer-golangci-lint.yml (v1.53.3): 8dd06b97d04e76afb6dcd26a95f35e30d5bec836fb0b95f2a2b3b077962244e9
+- golangci-lint-1.53.3-linux-amd64.tar.gz: 4f62007ca96372ccba54760e2ed39c2446b40ec24d9a90c21aad9f2fdf6cf0da  
+  This SHA-256 digest matches golangci-lint-1.53.3-checksums.txt at  
   https://github.com/golangci/golangci-lint/releases
 
 
