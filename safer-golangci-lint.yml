@@ -1,4 +1,4 @@
-# Copyright © 2021-2023 Montgomery Edwards⁴⁴⁸ (github.com/x448).
+# Copyright © 2021-2024 Montgomery Edwards⁴⁴⁸ (github.com/x448).
 # This file is licensed under MIT License.
 #
 # Safer GitHub Actions Workflow for golangci-lint.
@@ -27,11 +27,11 @@
 #   1. GOLINTERS_VERSION
 #   2. GOLINTERS_TGZ_DGST
 #
-# Release v1.53.3 (June 25, 2023)
-#   - Bump golangci-lint to 1.53.3
-#   - Hash of golangci-lint-1.53.3-linux-amd64.tar.gz
-#     - SHA-256: 4f62007ca96372ccba54760e2ed39c2446b40ec24d9a90c21aad9f2fdf6cf0da
-#                This SHA-256 digest matches golangci-lint-1.53.3-checksums.txt at
+# Release v1.54.2 (Feb 19, 2024)
+#   - Bump golangci-lint to 1.54.2
+#   - Hash of golangci-lint-1.54.2-linux-amd64.tar.gz
+#     - SHA-256: 17c9ca05253efe833d47f38caf670aad2202b5e6515879a99873fabd4c7452b3
+#                This SHA-256 digest matches golangci-lint-1.54.2-checksums.txt at
 #                https://github.com/golangci/golangci-lint/releases
 #
 name: linters
@@ -47,9 +47,9 @@ on:
 
 env:
   GO_VERSION: '1.20'
-  GOLINTERS_VERSION: 1.53.3
+  GOLINTERS_VERSION: 1.54.2
   GOLINTERS_ARCH: linux-amd64
-  GOLINTERS_TGZ_DGST: 4f62007ca96372ccba54760e2ed39c2446b40ec24d9a90c21aad9f2fdf6cf0da
+  GOLINTERS_TGZ_DGST: 17c9ca05253efe833d47f38caf670aad2202b5e6515879a99873fabd4c7452b3
   GOLINTERS_TIMEOUT: 15m
   OPENSSL_DGST_CMD: openssl dgst -sha256 -r
   CURL_CMD: curl --proto =https --tlsv1.2 --location --silent --show-error --fail
@@ -62,12 +62,12 @@ jobs:
       contents: read
     steps:
       - name: Checkout source
-        uses: actions/checkout@v3
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 1
 
       - name: Setup Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@93397bea11091df50f3d7e59dc26a7711a8bcfbe # v4.1.0
         with:
           go-version: ${{ env.GO_VERSION }}
           check-latest: true
