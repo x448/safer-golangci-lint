@@ -11,8 +11,8 @@ Use this to avoid two problems:
   - Pinning each release after reviewing the code.
 
 With safer-gbolangci-lint.yml, you only need to update 2 variables when you want to use a newer golangci-lint:
- - Version number of golangci-lint.  E.g. "1.54.2".
- - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.54.2".
+ - Version number of golangci-lint.  E.g. "1.56.2".
+ - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.56.2".
 
 What you download and execute shouldn't be able to change at anytime without your review. Linting the same source code should produce deterministic results unless you choose to modify the workflow or linter settings.
 
@@ -56,16 +56,16 @@ Or if you don't want to wait for an update, you can:
 ## Release v1.54.2
 
 Changes:
- - Bump golangci-lint to 1.54.2
- - Hash of golangci-lint-1.54.2-linux-amd64.tar.gz
-   SHA-256: 17c9ca05253efe833d47f38caf670aad2202b5e6515879a99873fabd4c7452b3  
-   This SHA-256 digest matches golangci-lint-1.54.2-checksums.txt at  
+ - Bump golangci-lint to 1.56.2
+ - Hash of golangci-lint-1.56.2-linux-amd64.tar.gz
+   SHA-256: e1c313fb5fc85a33890fdee5dbb1777d1f5829c84d655a47a55688f3aad5e501  
+   This SHA-256 digest matches golangci-lint-1.56.2-checksums.txt at  
    https://github.com/golangci/golangci-lint/releases
 
 SHA-256
-- safer-golangci-lint.yml (v1.54.2): 2041bdcb795a7b6c6ab49d28f422d906d4615f58f79982a4dff00821dc8c3dbd
-- golangci-lint-1.54.2-linux-amd64.tar.gz: 17c9ca05253efe833d47f38caf670aad2202b5e6515879a99873fabd4c7452b3  
-  This SHA-256 digest matches golangci-lint-1.54.2-checksums.txt at  
+- safer-golangci-lint.yml (v1.56.2): 0e5cf7ddd1fb60794c31826d868402581560340bffbac662185d61fa04235aa3
+- golangci-lint-1.54.2-linux-amd64.tar.gz: e1c313fb5fc85a33890fdee5dbb1777d1f5829c84d655a47a55688f3aad5e501  
+  This SHA-256 digest matches golangci-lint-1.56.2-checksums.txt at  
   https://github.com/golangci/golangci-lint/releases
 
 
