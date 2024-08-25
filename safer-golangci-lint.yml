@@ -27,11 +27,11 @@
 #   1. GOLINTERS_VERSION
 #   2. GOLINTERS_TGZ_DGST
 #
-# Release v1.54.2 (Feb 19, 2024)
-#   - Bump golangci-lint to 1.54.2
-#   - Hash of golangci-lint-1.54.2-linux-amd64.tar.gz
-#     - SHA-256: 17c9ca05253efe833d47f38caf670aad2202b5e6515879a99873fabd4c7452b3
-#                This SHA-256 digest matches golangci-lint-1.54.2-checksums.txt at
+# Release v1.56.2
+#   - Bump golangci-lint to 1.56.2
+#   - Hash of golangci-lint-1.56.2-linux-amd64.tar.gz
+#     - SHA-256: e1c313fb5fc85a33890fdee5dbb1777d1f5829c84d655a47a55688f3aad5e501
+#                This SHA-256 digest matches golangci-lint-1.56.2-checksums.txt at
 #                https://github.com/golangci/golangci-lint/releases
 #
 name: linters
@@ -46,10 +46,10 @@ on:
     branches: [main, master]
 
 env:
-  GO_VERSION: '1.20'
-  GOLINTERS_VERSION: 1.54.2
+  GO_VERSION: '1.22'
+  GOLINTERS_VERSION: 1.56.2
   GOLINTERS_ARCH: linux-amd64
-  GOLINTERS_TGZ_DGST: 17c9ca05253efe833d47f38caf670aad2202b5e6515879a99873fabd4c7452b3
+  GOLINTERS_TGZ_DGST: e1c313fb5fc85a33890fdee5dbb1777d1f5829c84d655a47a55688f3aad5e501
   GOLINTERS_TIMEOUT: 15m
   OPENSSL_DGST_CMD: openssl dgst -sha256 -r
   CURL_CMD: curl --proto =https --tlsv1.2 --location --silent --show-error --fail
@@ -62,12 +62,12 @@ jobs:
       contents: read
     steps:
       - name: Checkout source
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           fetch-depth: 1
 
       - name: Setup Go
-        uses: actions/setup-go@93397bea11091df50f3d7e59dc26a7711a8bcfbe # v4.1.0
+        uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5.0.2
         with:
           go-version: ${{ env.GO_VERSION }}
           check-latest: true
