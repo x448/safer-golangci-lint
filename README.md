@@ -2,6 +2,8 @@
 
 This workflow downloads, verifies, and runs [golangci/golangci-lint](https://github.com/golangci/golangci-lint) in a deterministic, easy to audit, and safe manner.
 
+I'm not affiliated with golangci-lint project. You can sponsor them at: https://github.com/sponsors/golangci.
+
 ## Why use safer-golangci-lint.yml?
 
 Use this to avoid two problems:
