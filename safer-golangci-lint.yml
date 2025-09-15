@@ -16,9 +16,9 @@
 # See golangci-lint docs for more info at
 # https://github.com/golangci/golangci-lint
 #
-# 100% of the script for downloading, installing, and running golangci-lint
-# is embedded in this file. The embedded SHA-256 digest is used to verify the
-# downloaded golangci-lint tarball (golangci-lint-1.xx.x-linux-amd64.tar.gz).
+# 100% of the script for downloading, installing, and running golangci-lint is embedded
+# in this file. This workflow uses the embedded SHA-256 digest to verify the downloaded
+# golangci-lint tarball (golangci-lint-1.xx.x-linux-amd64.tar.gz).
 #
 # The embedded SHA-256 digest matches golangci-lint-1.xx.x-checksums.txt at
 # https://github.com/golangci/golangci-lint/releases
@@ -27,11 +27,11 @@
 #   1. GOLINTERS_VERSION
 #   2. GOLINTERS_TGZ_DGST
 #
-# Release v1.59.1
-#   - Bump golangci-lint to 1.59.1
-#   - Hash of golangci-lint-1.59.1-linux-amd64.tar.gz
-#     - SHA-256: c30696f1292cff8778a495400745f0f9c0406a3f38d8bb12cef48d599f6c7791
-#     - https://github.com/golangci/golangci-lint/releases/download/v1.59.1/golangci-lint-1.59.1-checksums.txt
+# Release v1.64.8
+#   - Bump golangci-lint to 1.64.8
+#   - Hash of golangci-lint-1.64.8-linux-amd64.tar.gz
+#     - SHA-256: b6270687afb143d019f387c791cd2a6f1cb383be9b3124d241ca11bd3ce2e54e
+#     - https://github.com/golangci/golangci-lint/releases/download/v1.64.8/golangci-lint-1.64.8-checksums.txt
 #
 name: linters
 
@@ -45,13 +45,13 @@ on:
     branches: [main, master]
 
 env:
-  GO_VERSION: '1.22'
-  GOLINTERS_VERSION: 1.59.1
+  GO_VERSION: '1.24'
+  GOLINTERS_VERSION: 1.64.8
   GOLINTERS_ARCH: linux-amd64
-  GOLINTERS_TGZ_DGST: c30696f1292cff8778a495400745f0f9c0406a3f38d8bb12cef48d599f6c7791
+  GOLINTERS_TGZ_DGST: b6270687afb143d019f387c791cd2a6f1cb383be9b3124d241ca11bd3ce2e54e
   GOLINTERS_TIMEOUT: 15m
   OPENSSL_DGST_CMD: openssl dgst -sha256 -r
-  CURL_CMD: curl --proto =https --tlsv1.2 --location --silent --show-error --fail
+  CURL_CMD: curl --proto =https --tlsv1.3 --location --silent --show-error --fail
 
 jobs:
   main:
@@ -61,12 +61,12 @@ jobs:
       contents: read
     steps:
       - name: Checkout source
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           fetch-depth: 1
 
       - name: Setup Go
-        uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5.0.2
+        uses: actions/setup-go@44694675825211faa026b3c33043df3e48a5fa00 # v6.0.0
         with:
           go-version: ${{ env.GO_VERSION }}
           check-latest: true
