@@ -13,8 +13,8 @@ Use this to avoid two problems:
   - Pinning each release after reviewing the code.
 
 With safer-gbolangci-lint.yml, you only need to update 2 variables when you want to use a newer golangci-lint:
- - Version number of golangci-lint.  E.g. "1.59.1".
- - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.59.1".
+ - Version number of golangci-lint.  E.g. "1.64.8".
+ - SHA-256 digest of golangci-lint-X.XX.X-linux-amd64.tar.gz. E.g. where "X.XX.X" is "1.64.8".
 
 What you download and execute shouldn't be able to change at anytime without your review. Linting the same source code should produce deterministic results unless you choose to modify the workflow or linter settings.
 
@@ -54,25 +54,25 @@ Or if you want to manually update, you can:
 
 1. specify new version number for `GOLINTERS_VERSION`
 2. specify new hash digest of tarball for `GOLINTERS_TGZ_HASH` with SHA-256 from  
-    https://github.com/golangci/golangci-lint/releases/download/v1.59.1/golangci-lint-1.59.1-checksums.txt
+    https://github.com/golangci/golangci-lint/releases/download/v1.64.8/golangci-lint-1.64.8-checksums.txt
 
 ![image](https://github.com/user-attachments/assets/4b9dbe17-b552-47b1-a145-fb12935fec75)
 
-## Release v1.59.1
+## Release v1.64.8
 
 Changes:
-- Bump golangci-lint to 1.59.1
-- Update hash digest and URL for golangci-lint-1.59.1-linux-amd64.tar.gz
-  SHA-256: c30696f1292cff8778a495400745f0f9c0406a3f38d8bb12cef48d599f6c7791  
+- Bump golangci-lint to 1.64.8
+- Update hash digest and URL for golangci-lint-1.64.8-linux-amd64.tar.gz
+  SHA-256: b6270687afb143d019f387c791cd2a6f1cb383be9b3124d241ca11bd3ce2e54e  
 
 SHA-256
-- safer-golangci-lint.yml (v1.59.1): f4922eb526cc00d89cc4dcf02c0abea67a83dce0986eca797d81563f5870fc36
-- golangci-lint-1.59.1-linux-amd64.tar.gz: c30696f1292cff8778a495400745f0f9c0406a3f38d8bb12cef48d599f6c7791  
-  Must match upstream SHA-256 in: https://github.com/golangci/golangci-lint/releases/download/v1.59.1/golangci-lint-1.59.1-checksums.txt
+- safer-golangci-lint.yml (v1.64.8): 3197b246f462f98f9b51c768493156bab0e36356295bfa5b0ebe0ff12e364c9e
+- golangci-lint-1.64.8-linux-amd64.tar.gz: b6270687afb143d019f387c791cd2a6f1cb383be9b3124d241ca11bd3ce2e54e  
+  Must match upstream SHA-256 in: https://github.com/golangci/golangci-lint/releases/download/v1.64.8/golangci-lint-1.64.8-checksums.txt
 
 ## License
 
 safer-golangci-lint is licensed under MIT License.  See [LICENSE](LICENSE) for the full license text.  
 https://github.com/x448/safer-golangci-lint
 
-Copyright © 2021-2024 Montgomery Edwards⁴⁴⁸ (github.com/x448).
+Copyright © 2021-2025 Montgomery Edwards⁴⁴⁸ (github.com/x448).
